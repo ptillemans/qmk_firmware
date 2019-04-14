@@ -3,7 +3,6 @@
 
 #include QMK_KEYBOARD_H
 
-
 // Each layer gets a name for readability, which is then used in the keymap matrix below.
 // The underscores don't mean anything - you can have a layer called STUFF or any other name.
 // Layer names don't all need to be of the same length, obviously, and you can also skip them
@@ -30,7 +29,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_EXLM, KC_AT,   KC_UP,   KC_UNDS, KC_PLUS,                   KC_PGUP, KC_7,    KC_8,   KC_9, KC_ASTR ,
     KC_HASH, KC_LEFT, KC_DOWN, KC_RGHT, KC_DLR,                    KC_PGDN, KC_4,    KC_5,   KC_6, KC_PLUS ,
     KC_MINS, KC_EQL,  KC_LPRN, KC_RPRN, KC_AMPR,                   KC_GRV,  KC_1,    KC_2,   KC_3, KC_BSLS ,
-    TT(_LW), _______, _______, _______, _______, _______, _______, _______, TO(_QW), KC_DOT, KC_0, KC_RBRC
+    TT(_LW), _______, _______, _______, _______, _______, _______, _______, TO(_QW), KC_E,   KC_0, KC_RBRC
   ),
   /*
    * insert home   up  end   pgup       ||      up     F7    F8    F9   F10
