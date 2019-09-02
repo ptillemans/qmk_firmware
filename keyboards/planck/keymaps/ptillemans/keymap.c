@@ -41,6 +41,7 @@ enum planck_keycodes {
 
 #define MY_SHEN MT(MOD_LSFT, KC_ENT)
 #define MY_CTES MT(MOD_LCTL, KC_ESC)
+#define MY_SPAL MT(MOD_LALT, KC_SPC)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
@@ -59,7 +60,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_Q,    KC_W,    KC_E,    KC_R,    KC_T, KC_PGUP,   KC_UP,    KC_Y,    KC_U,   KC_I,     KC_O,    KC_P,
     KC_A,    KC_S,    KC_D,    KC_F,    KC_G, KC_PGDN, KC_DOWN,    KC_H,    KC_J,   KC_K,     KC_L, KC_SCLN,
     KC_Z,    KC_X,    KC_C,    KC_V,    KC_B, KC_HOME,  KC_END,    KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH,
-    LOWER, KC_TAB, KC_LGUI, KC_LSFT, KC_BSPC, MY_CTES, MY_CTES,  KC_SPC,   RAISE, KC_QUOT,KC_MINUS, MY_SHEN
+    LOWER, KC_TAB, KC_LGUI, KC_LSFT, KC_BSPC, MY_CTES, MY_CTES, MY_SPAL,   RAISE, KC_MINS, KC_QUOT, MY_SHEN
 ),
 /* Dvorak
  * ,-----------------------------------------------------------------------------------.
@@ -112,8 +113,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_RAISE] = LAYOUT_planck_grid(
     KC_EXLM,   KC_AT,   KC_UP, KC_UNDS, KC_PLUS, _______, _______,  KC_PGUP,    KC_7,    KC_8,    KC_9, KC_ASTR,
     KC_HASH, KC_LEFT, KC_DOWN, KC_RGHT,  KC_DLR, _______, _______,  KC_PGDN,    KC_4,    KC_5,    KC_6, KC_PLUS,
-    KC_MINS,  KC_EQL, KC_LPRN, KC_RPRN, KC_AMPR, _______, _______,   KC_GRV,    KC_1,    KC_2,    KC_3, KC_BSLS,
-    _______, _______, _______, _______, _______, _______, _______, _______, TO(_QWERTY),  KC_DOT,     KC_0,  KC_RBRC
+    KC_LBRC, KC_RBRC, KC_LPRN, KC_RPRN, KC_AMPR, _______, _______,   KC_GRV,    KC_1,    KC_2,    KC_3, KC_BSLS,
+    _______, _______, _______, _______, _______, _______, _______, _______, TO(_QWERTY), KC_DOT,  KC_0, KC_EQL
 ),
 
 /* Plover layer (http://opensteno.org)
